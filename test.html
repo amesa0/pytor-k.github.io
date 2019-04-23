@@ -1,45 +1,392 @@
-KB
----
-layout: default
-title: Pytor Kropotkin
-published: true
----
+<html lang="en">
+<head>
+   <title>Startpage</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+   <link rel="stylesheet" id="theme" type="text/css" href="main.css">
+</head>
 
-<div id="home">
-  <h1>5 Most Recent Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<style>
+  a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+    font-weight: bold !important;
+  }
+  
+  html{
+	font-family: "Droid Sans Mono";
+	font-size: 16pt;
+	background-color: #d5d5d5;
+	text-decoration: none;
 
-  <h1>Post Categories</h1>
-  <ul class="posts">
-    {% for category in site.categories %}
-      <li>&raquo; <a href="{{ category.url }}">{{ category.category | captialize }}</a></li>
-    {% endfor %}
-  </ul>
 
-  <h1>Japanese Language Learning Resources</h1>
-  <ul class="posts">
-    <li>&raquo; <a href="https://drive.google.com/drive/folders/0B1f7wbm9o-enZ2dOS19nMzRtUlU">Genki I & II (Textbook, Workbook, Audio)</a></li>
-    <li>&raquo; <a href="http://www.guidetojapanese.org/learn/complete/">Tae Kim's Guide to Learning Japanese</a></li>
-    <li>&raquo; <a href="https://www.reddit.com/r/LearnJapanese/">R/LearnJapanese</a></li>
-    <li>&raquo; <a href="https://discordapp.com/invite/NJJCYVD">Discord Server</a></li>
-    <li>&raquo; <a href="https://discord.gg/szdqaG">Discord Server</a></li>
-  </ul>
+}
 
-  <h1>Fitness Resources</h1>
-  <ul class="posts">
-    <li>&raquo; <a href="https://www.dropbox.com/s/n146ej2npqufdbi/GZCL%20Free%20Compendium%20November%2027th%20Update.xlsx?dl=0">GZCL Programs</a></li>
-    <li>&raquo; <a href="http://www.canditotraininghq.com/free-programs/">Candito Training Programs</a></li>
-    <li>&raquo; <a href="https://exrx.net/">ExRx Information on Exercise, Psychology, Pharmacology and much more</a></li>
-  </ul>
+a{
+	color: inherit;
+	text-decoration: inherit;
+	margin-left: 5px;
+	margin-top: 5px;
 
-  <h1>Blog Backbone Information</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
-    <li><a href="https://github.com/mojombo/mojombo.github.io">Mojombo.github.io:</a> Tom Preston-Werner's blog, the theme from which this blog is based on.</li>
-    <li><a href="https://prose.io">Prose.io:</a> A clean content editor I use for the blog when I don't feel like writing posts in a text editor.</li>
-  </ul>
-</div>
+}
+
+body{
+	background-image: url('bg1.png');
+  background-color: #d5d5d5;
+
+}
+
+
+#title{
+	font-size: 20pt;
+  color: black;
+	width: 1040px;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 50px;
+	text-align: center;
+}
+
+
+#links{
+	width: 1050px;
+	margin: 0 auto;
+  background-color: white;
+  vertical-align: center;
+  margin-top: 50px;
+  color: black;
+
+}
+
+#social{
+	font-size: 16pt;
+	margin-right: 10px;
+  margin-bottom: 10px;
+	float: left;
+	background: #a4d0d9;
+	width: 250px;
+	height: 300px;
+
+}
+
+#email{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#communities{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#donate{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#communication{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#media{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#typing{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#github{
+	margin-right: 10px;
+	float: left;
+	background: #8e849c;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#searchbox{
+  margin-right: 10px;
+  float: left;
+  background: #babbbd;
+  width: 1030px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+#search {
+    /* background-color: transparent; */
+    width: 1040px;
+    clear: both;
+    border: none;
+    margin: 0 auto;
+    z-index: 201;
+    color: #babbbd;
+}
+
+#searchhome {
+    width: 1040px;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 0px 5px 0px;
+}
+
+#searchhome input {
+    color: #000;
+    font-size: 18pt;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+
+
+    width: 95%;
+    background-color: #d5d5d5;
+
+}
+
+#searchhome input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+form input {
+    background: #d5d5d5;
+    border: none;
+    margin: 10px 5px 0px 15px;
+    width: 1040px;
+    margin: 0 auto;
+}
+
+</style>
+
+<body>
+
+
+
+
+   <div id="title">
+     <p id="title2"></p>
+   </div>
+
+   <div id="links">
+       <div id="social">
+           <div>
+               <a href="https://old.reddit.com">Reddit</a>
+           </div>
+           <div>
+               <a href="https://twitter.com">Twitter</a>
+           </div>
+       </div>
+
+       <div id="email">
+           <div>
+               <a href="https://mail.google.com/mail/u/0/#inbox">Email</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/2/#inbox">Email 2</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/3/#inbox">Email 3</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/1/#inbox">School Email</a>
+           </div>
+           <div>
+             <a href="https://fiu.instructure.com/">Canvas</a>
+           </div>
+       </div>
+
+
+       <div id="communities">
+           <div>
+               <a href="https://old.reddit.com/r/mechanicalkeyboards">r/mk</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/mechmarket">r/mm</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/leagueoflegends">r/league</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/offlinetv">r/offlinetv</a>
+           </div>
+           <div>
+               <a href="https://www.geekhack.org">Geekhack</a>
+           </div>
+       </div>
+
+
+       <div id="donate">
+           <!-- <div id="btc">
+               <a data-clipboard-text="14stwoUxqeWkBYK6Trtit2N3gBunC4FvUF">BTC</a>
+           </div>
+           <div id="ltc">
+               <a data-clipboard-text="0x9293fd82f786d48d7F6652907e9046cd1745B66E">LTC</a>
+           </div>
+           <div id="eth">
+               <a data-clipboard-text="LfrNEZTST5tCkgd84BN3rsYvcsyYcFaLag">ETH</a>
+           </divS>
+           <div>
+               <a data-clipboard-text="xrb_1pcckib98js63hm6j4xwkae8cnm9k11njsuh8ofgd8o8f3ba4zqyszbhcbgw">RAI</a>
+           </div>
+           <div>
+               <a data-clipboard-text="URDQRGRO9R9ACDGCHGPP9UJWEARQJPZBPXCZOY9JDNQKOOUVKYYHADCNJWFWCWPJTKCRIAVYFNCHWQLJZMHLWHWEHD">IOTA</a>
+           </div>
+           <div style="text-align: center; padding-right: 10px;">
+               <a style="font-size: 8pt;padding-right: 15px !important; text-align: center !important;">Click = Copy to clipboard</a>
+           </div> -->
+           <div>
+             <a href="https://u.gg/lol/tier-list/?utm_source=Youtube&utm_campaign=Travis&role=jungle&region=kr">U.gg - Jungle KR</a>
+           </div>
+           <div>
+             <a href="https://u.gg/lol/tier-list/?utm_source=Youtube&utm_campaign=Travis&role=support&region=kr">U.gg - Support KR</a>
+           </div>
+           <div>
+             <a href="http://na.op.gg/summoner/userName=slightlyhelpful">Op.gg - Slightly</a>
+           </div>
+           <div>
+             <a href="http://www.op.gg/summoner/userName=%ED%83%80%EC%A7%A0">Op.gg - Tarzan</a>
+           </div>
+           <div>
+             <a href="http://www.op.gg/summoner/userName=%EC%B8%A0%EC%BD%94%ED%8C%8C%EC%9D%B4">Op.gg - Tarzan 2</a>
+           </div>
+           <div>
+             <a href="http://www.op.gg/summoner/userName=jugklng">Op.gg - JugKing</a>
+           </div>
+           <div>
+             <a href="http://www.op.gg/summoner/userName=%EC%96%B4%EB%A5%B8%EB%A7%88%EC%9D%84">Op.gg - RandJG</a>
+           </div>
+           <div>
+             <a href="http://www.op.gg/summoner/userName=kzcuzz">Op.gg - KZ_Cuzz</a>
+           </div>
+
+       </div>
+
+       <div id="">
+       </div>
+
+
+       <div id="media">
+           <div>
+               <a href="http://Twitch.com/">Twitch</a>
+           </div>
+           <div>
+               <a href="https://netflix.com">Netflix</a>
+           </div>
+           <div>
+               <a href="https://youtube.com/">Youtube</a>
+           </div>
+           <div>
+               <a href="https://otakustream.tv/">Otakustream</a>
+           </div>
+           <div>
+               <a href="https://tsumino.com/" style="color: transparent !important;" >Tsumino</a>
+           </div>
+       </div>
+
+       <div id="communication">
+           <div>
+               <a href="https://discordapp.com/">Discord</a>
+           </div>
+           <div>
+               <a href="https://web.whatsapp.com/">Whatsapp</a>
+           </div>
+           <div>
+             <a href="https://duolingo.com">Duolingo</a>
+           </div>
+       </div>
+
+       <div id="typing">
+           <div>
+               <a href="https://keybr.com">Keybr</a>
+           </div>
+           <div>
+               <a href="https://10fastfingers.com/">10fastfingers</a>
+           </div>
+           <div>
+               <a href="https://www.typeracer.com">TypeRacer</a>
+           </div>
+           <div>
+               <a href="http://www.thetypingcat.com/">TypingCat</a>
+           </div>
+       </div>
+
+       <div id="github">
+           <div>
+               <a href="https://www.github.com/amesa0">Github</a>
+           </div>
+           <div>
+               <a href="https://github.com/amesa0/NIX">NIX Repo</a>
+           </div>
+           <div>
+               <a href="https://github.com/amesa0/amesa0.github.io">Startpage Repo</a>
+           </div>
+       </div>
+
+       <div id="searchbox">
+         <div id="searchhome">
+             <form method="get" action="https://duckduckgo.com/?q=">
+                 <input type="text" name="q" height="100" id="duck" placeholder="." autocomplete="off">
+             </form>
+         </div>
+
+         <div id="searchhome">
+             <form method="get" action="https://www.google.com/search?q=">
+                 <input type="text" name="q" height="100" id="searchmain" placeholder=".." autocomplete="off">
+             </form>
+         </div>
+
+         <div id="searchhome">
+             <form method="get" action="https://old.reddit.com/search?q=">
+                 <input type="text" name="q" height="100" id="searchmain" placeholder="..." autocomplete="off">
+             </form>
+         </div>
+       </div>
+
+
+
+
+   <!-- <div class="buttondiv" id="buttondiv">
+     <button type="button" class="btn" id="fortune" onclick="fortune()"> Fortune cookie fortune </button>
+   </div> -->
+
+
+   <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>
