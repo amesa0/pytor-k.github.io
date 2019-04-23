@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+th, td {
+  border-bottom: 1.5px solid #eef;
+}
+
 /* th {
   box-sizing: border-box;
   display: table-header-group;
