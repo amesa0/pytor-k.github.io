@@ -1,0 +1,14 @@
+---
+layout: default
+published: true
+---
+<div id="post">
+  <p class="meta">
+    Last edited: {{ "now" | date: "%d-%m-%Y %H:%M" }}
+    {% assign category = site.categories | where: 'category', page.category | first %}
+    {% if author %}
+      - <a href="{{ author.url }}">{{ author.name }}</a>
+    {% endif %}
+  </p>
+  {{ content }}
+</div>
