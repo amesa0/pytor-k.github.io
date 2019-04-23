@@ -1,0 +1,373 @@
+<html lang="en">
+<head>
+   <title>Startpage</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+   <link rel="stylesheet" id="theme" type="text/css" href="main.css">
+</head>
+
+<style>
+  a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+    font-weight: bold !important;
+  }
+
+  html{
+	font-family: "Droid Sans Mono";
+	font-size: 16pt;
+	background-color: #d5d5d5;
+	text-decoration: none;
+
+
+}
+
+a{
+	color: inherit;
+	text-decoration: inherit;
+	margin-left: 5px;
+	margin-top: 5px;
+
+}
+
+body{
+	background-image: url('bg1.png');
+  background-color: #d5d5d5;
+
+}
+
+
+#title{
+	font-size: 20pt;
+  color: black;
+	width: 1040px;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 50px;
+	text-align: center;
+}
+
+
+#links{
+	width: 1050px;
+	margin: 0 auto;
+  background-color: white;
+  vertical-align: center;
+  margin-top: 50px;
+  color: black;
+
+}
+
+#social{
+	font-size: 16pt;
+	margin-right: 10px;
+  margin-bottom: 10px;
+	float: left;
+	background: #a4d0d9;
+	width: 250px;
+	height: 300px;
+
+}
+
+#email{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#communities{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#donate{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#communication{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#media{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#typing{
+	margin-right: 10px;
+	float: left;
+	background: #babbbd;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#github{
+	margin-right: 10px;
+	float: left;
+	background: #8e849c;
+	width: 250px;
+	height: 300px;
+  margin-bottom: 10px;
+}
+
+#searchbox{
+  margin-right: 10px;
+  float: left;
+  background: #babbbd;
+  width: 1030px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+#search {
+    /* background-color: transparent; */
+    width: 1040px;
+    clear: both;
+    border: none;
+    margin: 0 auto;
+    z-index: 201;
+    color: #babbbd;
+}
+
+#searchhome {
+    width: 1040px;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 0px 5px 0px;
+}
+
+#searchhome input {
+    color: #000;
+    font-size: 18pt;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+
+
+    width: 95%;
+    background-color: #d5d5d5;
+
+}
+
+#searchhome input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+form input {
+    background: #d5d5d5;
+    border: none;
+    margin: 10px 5px 0px 15px;
+    width: 1040px;
+    margin: 0 auto;
+}
+
+</style>
+
+<body>
+
+
+
+
+   <div id="title">
+     <p id="title2"></p>
+   </div>
+
+   <div id="links">
+       <div id="social">
+           <div>
+               <a href="https://old.reddit.com">Reddit</a>
+           </div>
+           <div>
+               <a href="https://twitter.com">Twitter</a>
+           </div>
+           <div>
+               <a href="https://pytor-k.github.io/">Blog</a>
+           </div>
+           <div>
+               <a href="https://github.com/pytor-k/">Github</a>
+           </div>
+       </div>
+
+       <div id="email">
+           <div>
+               <a href="https://mail.google.com/mail/u/0/#inbox">Email</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/2/#inbox">Email 2</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/3/#inbox">Email 3</a>
+           </div>
+           <div>
+               <a href="https://mail.google.com/mail/u/1/#inbox">School Email</a>
+           </div>
+           <div>
+             <a href="https://fiu.instructure.com/">Canvas</a>
+           </div>
+           <div>
+               <a href="https://tsumino.com/" style="color: transparent !important;" >Tsumino</a>
+           </div>
+       </div>
+
+
+       <!-- <div id="communities">
+           <div>
+               <a href="https://old.reddit.com/r/mechanicalkeyboards">r/mk</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/mechmarket">r/mm</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/leagueoflegends">r/league</a>
+           </div>
+           <div>
+               <a href="https://old.reddit.com/r/offlinetv">r/offlinetv</a>
+           </div>
+           <div>
+               <a href="https://www.geekhack.org">Geekhack</a>
+           </div>
+       </div> -->
+
+
+       <div id="donate">
+           <div>
+             <a href="https://u.gg/lol/tier-list/?utm_source=Youtube&utm_campaign=Travis&role=jungle&region=kr">U.gg - Jungle KR</a>
+           </div>
+           <div>
+             <a href="https://u.gg/lol/tier-list/?utm_source=Youtube&utm_campaign=Travis&role=support&region=kr">U.gg - Support KR</a>
+           </div>
+           <div>
+             <a href="http://na.op.gg/summoner/userName=slightlyhelpful">Op.gg - Slightly</a>
+           </div>
+           <div>
+               <a href="https://nhentai.net/" style="color: transparent !important;" >Nhentai</a>
+           </div>
+       </div>
+
+       <div id="">
+       </div>
+
+
+       <div id="media">
+           <div>
+               <a href="http://Twitch.com/">Twitch</a>
+           </div>
+           <div>
+               <a href="https://netflix.com">Netflix</a>
+           </div>
+           <div>
+               <a href="https://youtube.com/">Youtube</a>
+           </div>
+           <div>
+               <a href="https://mangadex.org/">MangaDex</a>
+           </div>
+           <div>
+               <a href="https://mangarock.com/">Mangarock</a>
+           </div>
+           <div>
+               <a href="https://hentai.cafe/" style="color: transparent !important;" >HentaiCafe</a>
+           </div>
+       </div>
+
+       <!-- <div id="communication">
+           <div>
+               <a href="https://discordapp.com/">Discord</a>
+           </div>
+           <div>
+               <a href="https://web.whatsapp.com/">Whatsapp</a>
+           </div>
+           <div>
+             <a href="https://duolingo.com">Duolingo</a>
+           </div>
+       </div> -->
+
+       <!-- <div id="typing">
+           <div>
+               <a href="https://keybr.com">Keybr</a>
+           </div>
+           <div>
+               <a href="https://10fastfingers.com/">10fastfingers</a>
+           </div>
+           <div>
+               <a href="https://www.typeracer.com">TypeRacer</a>
+           </div>
+           <div>
+               <a href="http://www.thetypingcat.com/">TypingCat</a>
+           </div>
+       </div> -->
+
+       <!-- <div id="github">
+           <div>
+               <a href="https://www.github.com/amesa0">Github</a>
+           </div>
+           <div>
+               <a href="https://github.com/amesa0/NIX">NIX Repo</a>
+           </div>
+           <div>
+               <a href="https://github.com/amesa0/amesa0.github.io">Startpage Repo</a>
+           </div>
+       </div> -->
+
+       <div id="searchbox">
+         <!-- <div id="searchhome">
+             <form method="get" action="https://duckduckgo.com/?q=">
+                 <input type="text" name="q" height="100" id="duck" placeholder="." autocomplete="off">
+             </form>
+         </div> -->
+
+         <div id="searchhome">
+             <form method="get" action="https://www.google.com/search?q=">
+                 <input type="text" name="q" height="100" id="searchmain" placeholder=".." autocomplete="off">
+             </form>
+         </div>
+
+         <!-- <div id="searchhome">
+             <form method="get" action="https://old.reddit.com/search?q=">
+                 <input type="text" name="q" height="100" id="searchmain" placeholder="..." autocomplete="off">
+             </form>
+         </div> -->
+       </div>
+
+
+
+
+   <!-- <div class="buttondiv" id="buttondiv">
+     <button type="button" class="btn" id="fortune" onclick="fortune()"> Fortune cookie fortune </button>
+   </div> -->
+
+
+   <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>
