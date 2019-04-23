@@ -49,7 +49,27 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+/* th {
+  box-sizing: border-box;
+  display: table-header-group;
+  line-height: 20px;
+  position: static;
+  z-index: auto;
+} */
+
+/* tb{
+  box-sizing: content-box;
+  display: table-row-group;
+  float: none;
+  line-height: 20px;
+  position: static;
+  z-index: auto;
+} */
 
 /*****************************************************************************/
 /*
