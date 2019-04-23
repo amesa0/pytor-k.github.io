@@ -1,0 +1,44 @@
+---
+layout: default
+title: Pytor Kropotkin
+published: true
+---
+
+<div id="home">
+  <h1>5 Most Recent Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts limit:5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Post Categories</h1>
+  <ul class="posts">
+    {% for category in site.categories %}
+      <li>&raquo; <a href="{{ category.url }}">{{ category.category | captialize }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Japanese Language Learning Resources</h1>
+  <ul class="posts">
+    <li>&raquo; <a href="https://drive.google.com/drive/folders/0B1f7wbm9o-enZ2dOS19nMzRtUlU">Genki I & II (Textbook, Workbook, Audio)</a></li>
+    <li>&raquo; <a href="http://www.guidetojapanese.org/learn/complete/">Tae Kim's Guide to Learning Japanese</a></li>
+    <li>&raquo; <a href="https://www.reddit.com/r/LearnJapanese/">R/LearnJapanese</a></li>
+    <li>&raquo; <a href="https://discordapp.com/invite/NJJCYVD">Discord Server</a></li>
+    <li>&raquo; <a href="https://discord.gg/szdqaG">Discord Server</a></li>
+  </ul>
+
+  <h1>Fitness Resources</h1>
+  <ul class="posts">
+    <li>&raquo; <a href="https://www.dropbox.com/s/n146ej2npqufdbi/GZCL%20Free%20Compendium%20November%2027th%20Update.xlsx?dl=0">GZCL Programs</a></li>
+    <li>&raquo; <a href="http://www.canditotraininghq.com/free-programs/">Candito Training Programs</a></li>
+    <li>&raquo; <a href="https://exrx.net/">ExRx Information on Exercise, Psychology, Pharmacology and much more</a></li>
+  </ul>
+
+  <h1>Blog Backbone Information</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
+    <li><a href="https://github.com/mojombo/mojombo.github.io">Mojombo.github.io:</a> Tom Preston-Werner's blog, the theme from which this blog is based on.</li>
+    <li><a href="https://prose.io">Prose.io:</a> A clean content editor I use for the blog when I don't feel like writing posts in a text editor.</li>
+  </ul>
+</div>
