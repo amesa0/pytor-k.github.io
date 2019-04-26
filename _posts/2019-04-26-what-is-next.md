@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 category: thoughts
 title: What is next?
@@ -16,5 +16,4 @@ What next? I truly don't know. I have been brainstorming if I want to change my 
 
 Having an actual panic attack while typing this, my vision is going blury, I feel like I am going to throw up, my heart is beating too fast, I am shaking, I feel like the minute i stop typing i will fall to the floor and curl up in the fetal position. I am scared. Its a scary situation I find myself in. Breathe in Breathe out. 
 
-That's it for now. I have to go. 
-
+That's it for now. I have to go.
